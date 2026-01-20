@@ -50,6 +50,8 @@ docker-compose up --build
 
 - http://localhost:8080/health/
 
+Par défaut, l'URL de santé est `/health/`, mais vous pouvez la changer via `DJANGO_HEALTH_PATH` dans le `.env` (par exemple `DJANGO_HEALTH_PATH=status` donnera `/status/`).
+
 ## Services
 
 - **app** : conteneur Django 1.11 / Python 2.7 + Gunicorn.
